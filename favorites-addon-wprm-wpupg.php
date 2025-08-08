@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 add_filter( 'wpupg_query_post_args', function( $args, $query_args = null, $grid = null ) {
     // Only act when toggle is on.
-    $toggle = isset( $_GET['only_bookmarks'] ) ? wp_unslash( $_GET['only_bookmarks'] ) : '';
+    $toggle = sanitize_text_field( wp_unslash( $_GET['only_bookmarks'] ?? '' ) );
     if ( '1' !== $toggle ) {
         return $args;
     }
