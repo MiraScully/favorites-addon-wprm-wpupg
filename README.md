@@ -1,0 +1,1 @@
+# favorites-addon-wprm-wpupg
