@@ -18,7 +18,7 @@ Put a small GET form somewhere on the page that contains your WPUPG block. When 
 **English:**
 <form method="get" action="">
   <label>
-    <input type="checkbox" name="only_bookmarks" value="1" <?= isset($_GET['only_bookmarks']) ? 'checked' : '' ?>>
+    <input type="checkbox" name="only_bookmarks" value="1" <?php echo isset( $_GET['only_bookmarks'] ) ? 'checked' : ''; ?>>
     Only my favorites
   </label>
   <button type="submit">Apply</button>
@@ -27,7 +27,7 @@ Put a small GET form somewhere on the page that contains your WPUPG block. When 
 **Deutsch:**
 <form method="get" action="">
   <label>
-    <input type="checkbox" name="only_bookmarks" value="1" <?= isset($_GET['only_bookmarks']) ? 'checked' : '' ?>>
+    <input type="checkbox" name="only_bookmarks" value="1" <?php echo isset( $_GET['only_bookmarks'] ) ? 'checked' : ''; ?>>
     Nur meine Favoriten
   </label>
   <button type="submit">Anwenden</button>
