@@ -11,6 +11,8 @@ function add_filter( $tag, $function_to_add, $priority = 10, $accepted_args = 1 
     $wp_filters[ $tag ] = $function_to_add;
 }
 
+function add_action( $tag, $function_to_add, $priority = 10, $accepted_args = 1 ) {}
+
 function is_user_logged_in() {
     return true;
 }
